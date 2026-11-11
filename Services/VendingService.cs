@@ -117,8 +117,8 @@ public class VendingService
         {
             payment.PaymentStatus = PaymentStatus.FAILED;
             _store.Payments[payment.PaymentId] = payment;
-            //return new VendingOperationResult(false, $"Payment failed: {gatewayResult.Message}", tx, payment);
-            return new VendingOperationResult(false, $"Payment failed: {gatewayResult.Message}",null, payment);
+           // return new VendingOperationResult(false, $"Payment failed: {gatewayResult.Message}", tx, payment);
+           return new VendingOperationResult(false, $"Payment failed: {gatewayResult.Message}",null, payment);
         }
 
         payment.PaymentStatus = PaymentStatus.SUCCESS;
@@ -145,8 +145,8 @@ public class VendingService
             }
 
             payment.PaymentStatus = PaymentStatus.REFUNDED;
-            //return new VendingOperationResult(false, "Hardware dispense failed. Full refund initiated.", tx, payment);
-            return new VendingOperationResult(false, "Hardware dispense failed. Full refund initiated.", null, payment);
+            return new VendingOperationResult(false, "Hardware dispense failed. Full refund initiated.", tx, payment);
+            //return new VendingOperationResult(false, "Hardware dispense failed. Full refund initiated.", null, payment);
         }
 
         // 4. Return Cash Change (if any), Decrement Stock, and Complete Transaction
@@ -163,8 +163,8 @@ public class VendingService
             ? $"Dispensed! Inserted: ${payment.AmountPaid:F2}, Change Returned: ${payment.ChangeReturned:F2}."
             : $"Dispensed! Card/UPI charged ${payment.AmountPaid:F2} (Ref: {payment.GatewayReferenceId}).";
 
-        //return new VendingOperationResult(true, summaryMsg, tx, payment);
-        return new VendingOperationResult(true, summaryMsg, null, payment);
+        return new VendingOperationResult(true, summaryMsg, tx, payment);
+        //return new VendingOperationResult(true, summaryMsg, null, payment);
     }
 
     public async Task<VendingOperationResult> CancelTransactionAsync(Guid transactionId)
@@ -179,8 +179,8 @@ public class VendingService
         if (slot != null) slot.IsLocked = false;
 
         tx.Status = TransactionStatus.CANCELLED;
-        //return await Task.FromResult(new VendingOperationResult(true, "Transaction cancelled and slot unlocked.", tx));
-        return await Task.FromResult(new VendingOperationResult(true, "Transaction cancelled and slot unlocked."));
+        return await Task.FromResult(new VendingOperationResult(true, "Transaction cancelled and slot unlocked.", tx));
+       // return await Task.FromResult(new VendingOperationResult(true, "Transaction cancelled and slot unlocked."));
     }
 
     public bool UpdateStock(Guid machineId, int slotNumber, int delta)
