@@ -36,3 +36,14 @@ C:\interview\fromgit\VM_Core\VendingMachine_Core\bin\Debug\net8.0\Services.dll
 C:\interview\fromgit\VM_Core\VendingMachine_Core\bin\Debug\net8.0\Services.pdb
 C:\interview\fromgit\VM_Core\VendingMachine_Core\bin\Debug\net8.0\Data.pdb
 C:\interview\fromgit\VM_Core\VendingMachine_Core\bin\Debug\net8.0\Entities.pdb
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.csproj.AssemblyReference.cache
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.AssemblyInfoInputs.cache
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.AssemblyInfo.cs
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.csproj.CoreCompileInputs.cache
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.MvcApplicationPartsAssemblyInfo.cs
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.MvcApplicationPartsAssemblyInfo.cache
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.sourcelink.json
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.dll
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\refint\VendingMachine_Core.dll
+C:\interview\fromgit\LendingPad_VendingMachine_Project\VendingMachine_Core\obj\Debug\net8.0\VendingMachine_Core.pdb
