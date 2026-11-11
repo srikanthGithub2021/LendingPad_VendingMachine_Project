@@ -32,7 +32,7 @@ namespace Data
         public record VendingOperationResult(
             bool Success,
             string Message,
-            System.Transactions.Transaction? Transaction = null,
+            Transaction? Transaction = null,
             Payment? Payment = null
         );
     }

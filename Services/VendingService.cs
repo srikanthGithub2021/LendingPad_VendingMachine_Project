@@ -69,8 +69,8 @@ public class VendingService
             };
 
             _store.Transactions[tx.TransactionId] = tx;
-            // return new VendingOperationResult(true, $"Selected {product.Name}. Please pay ${product.Price:F2}.", tx);
-            return new VendingOperationResult(true, $"Selected {product.Name}. Please pay ${product.Price:F2}.", null);
+             return new VendingOperationResult(true, $"Selected {product.Name}. Please pay ${product.Price:F2}.", tx);
+          //  return new VendingOperationResult(true, $"Selected {product.Name}. Please pay ${product.Price:F2}.", null);
         }
         finally
         {
